@@ -1105,7 +1105,7 @@ static void __attribute__((noinline)) print_result()
     }
     else
       printf("%-9s: %s\n", row[2], row[3]);
-    strmov(prev, row[0]);
+    strmake_buf(prev, row[0]);
   }
   /* add the last table to be repaired to the list */
   if (found_error && opt_auto_repair && what_to_do != DO_REPAIR)
